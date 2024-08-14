@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* SignIn 컨테이너 */
+.SignIn {
+    width: 350px; /* 너비를 고정 */
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* 이미지 너비를 부모 요소에 맞춤 */
+.SignIn img {
+    width: 100%;
+    height: 250px;
+    max-width: 100%; /* 이미지가 부모 요소를 넘지 않도록 함 */
+    margin-bottom: 20px;
+}
+
+/* 입력 필드와 버튼 너비를 맞춤 */
+.SignIn input[type="email"],
+.SignIn input[type="password"],
+.SignIn input[type="submit"],
+.SignIn input[type="button"] {
+    width: calc(100% - 20px); /* 전체 너비에서 padding을 제외한 크기로 설정 */
+    max-width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* 버튼 스타일 */
+.SignIn input[type="submit"],
+.SignIn input[type="button"] {
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+/* 로그인 버튼 */
+.SignIn input[type="submit"] {
+    background-color: #0095f6;
+    color: #fff;
+}
+
+/* 회원가입 버튼 */
+.SignIn input[type="button"] {
+    background-color: #fff;
+    color: #0095f6;
+    border: 1px solid #0095f6;
+}
+
+/* Hover 상태 */
+.SignIn input[type="submit"]:hover,
+.SignIn input[type="button"]:hover {
+    opacity: 0.8;
+}
+
+/* 입력 필드 포커스 상태 */
+.SignIn input[type="email"]:focus,
+.SignIn input[type="password"]:focus {
+    border-color: #a8a8a8;
+    outline: none;
+    background-color: #fff;
+}
